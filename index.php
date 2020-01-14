@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once 'connection.php';
 
 include_once 'includes/head.php';

@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect("localhost","root","","service_system");
+$con = mysqli_connect("localhost","Djimi","rounders","service_system");
 
 // Check connection
 if (mysqli_connect_errno()) {

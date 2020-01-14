@@ -19,7 +19,7 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password'])
     if (mysqli_query($con, $sql)) {
 //        Get the user
         $userSql = "SELECT * FROM users WHERE email='{$email}' AND password='{$password}'";
-        $userQuery = mysqli_query($con, $sql);
+        $userQuery = mysqli_query($con, $userSql);
         $user = mysqli_fetch_assoc($userQuery);
 
         $_SESSION['user'] = $user;
